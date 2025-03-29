@@ -1,0 +1,81 @@
+/* layouts.css */
+:root {
+  --slidev-theme-primary: #3B00B9;
+  --slidev-theme-secondary: #1E005D;
+  --slidev-theme-accent: #ED1E79;
+  --slidev-theme-code-background: #181818;
+  --slidev-theme-code-foreground: #FFFFFF;
+  
+  /* Light mode colors */
+  --slidev-theme-background: #FFFFFF;
+  --slidev-theme-foreground: #181818;
+  
+  /* Dark mode colors */
+  --slidev-theme-dark-background: #1E005D;
+  --slidev-theme-dark-foreground: #FFFFFF;
+}
+
+/* Dark mode styles */
+html:not(.light) {
+  --slidev-theme-background: var(--slidev-theme-dark-background);
+  --slidev-theme-foreground: var(--slidev-theme-dark-foreground);
+}
+
+/* Global styles */
+.slidev-layout {
+  @apply px-14 py-10;
+  
+  h1 {
+    @apply text-4xl mb-4 font-bold text-infinite dark:text-white;
+  }
+  
+  h2 {
+    @apply text-3xl mb-4 font-bold text-infinite dark:text-white;
+  }
+  
+  h3 {
+    @apply text-2xl mb-4 font-bold text-infinite dark:text-white;
+  }
+  
+  h4 {
+    @apply text-xl mb-4 font-bold text-infinite dark:text-white;
+  }
+  
+  h5 {
+    @apply text-lg mb-4 font-bold text-infinite dark:text-white;
+  }
+  
+  h6 {
+    @apply text-base mb-4 font-bold text-infinite dark:text-white;
+  }
+  
+  p {
+    @apply my-4 leading-6;
+  }
+  
+  ul, ol {
+    @apply pl-6 my-4;
+  }
+  
+  li {
+    @apply my-2;
+  }
+  
+  blockquote {
+    @apply border-l-4 border-infinite dark:border-picton-blue pl-4 py-2 my-4 bg-gray-50 dark:bg-gray-800;
+  }
+  
+  code {
+    @apply px-1.5 py-0.5 rounded-md bg-gray-100 dark:bg-gray-800 text-sm;
+  }
+  
+  pre {
+    @apply p-4 rounded-lg bg-dfblack text-dfwhite overflow-auto;
+  }
+}
+
+/* Particle background for dark mode */
+html:not(.light) body {
+  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%"><rect width="100%" height="100%" fill="%231E005D"/><g fill="%23FFFFFF" opacity="0.1"><circle cx="10%" cy="20%" r="1"/><circle cx="20%" cy="40%" r="1"/><circle cx="30%" cy="10%" r="1"/><circle cx="40%" cy="30%" r="1"/><circle cx="50%" cy="50%" r="1"/><circle cx="60%" cy="20%" r="1"/><circle cx="70%" cy="40%" r="1"/><circle cx="80%" cy="10%" r="1"/><circle cx="90%" cy="30%" r="1"/></g></svg>');
+  background-size: cover;
+}

@@ -1,17 +1,43 @@
 {
-  "name": "slidev-new",
-  "type": "module",
-  "private": true,
+  "name": "slidev-theme-dfinity",
+  "version": "0.1.0",
+  "description": "DFINITY-inspired theme for Slidev",
+  "keywords": [
+    "slidev-theme",
+    "slidev",
+    "dfinity",
+    "internet-computer"
+  ],
+  "author": "",
+  "license": "MIT",
+  "private": false,
+  "engines": {
+    "node": ">=14.0.0",
+    "slidev": ">=0.19.3"
+  },
   "scripts": {
     "build": "slidev build",
     "dev": "slidev --open",
     "export": "slidev export"
   },
-  "dependencies": {
-    "@slidev/cli": "^0.50.0-beta.10",
-    "@slidev/theme-default": "latest",
-    "@slidev/theme-seriph": "latest",
-    "vue": "^3.5.13"
+  "slidev": {
+    "colorSchema": "both",
+    "highlighter": "shiki",
+    "defaults": {
+      "fonts": {
+        "sans": "Circular, 'Source Sans Pro', ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial",
+        "mono": "'Fira Code', monospace"
+      },
+      "hightlighter": "shiki"
+    }
   },
-  "packageManager": "pnpm@9.14.4"
+  "dependencies": {
+    "@slidev/types": "latest",
+    "@vueuse/head": "^2.0.0",
+    "codemirror-theme-vars": "^0.1.1",
+    "prism-theme-vars": "^0.2.4"
+  },
+  "devDependencies": {
+    "@slidev/cli": "latest"
+  }
 }
