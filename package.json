@@ -11,9 +11,8 @@
   "author": "",
   "license": "MIT",
   "private": false,
-  "engines": {
-    "node": ">=14.0.0",
-    "slidev": ">=0.19.3"
+  "engines": {    
+    "npm": "please use pnpm"
   },
   "scripts": {
     "build": "slidev build",
@@ -32,12 +31,11 @@
     }
   },
   "dependencies": {
+    "@slidev/cli": "latest",
     "@slidev/types": "latest",
-    "@vueuse/head": "^2.0.0",
-    "codemirror-theme-vars": "^0.1.1",
-    "prism-theme-vars": "^0.2.4"
-  },
-  "devDependencies": {
-    "@slidev/cli": "latest"
+    "@vueuse/head": "latest",
+    "codemirror-theme-vars": "latest",
+    "prism-theme-vars": "latest",
+    "vue": "latest"
   }
 }

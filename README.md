@@ -148,3 +148,4 @@ You can customize the theme by overriding CSS variables or adding your own style
 - Theme created based on [DFINITY brand guidelines](https://dfinity.frontify.com/d/pD7yZhsmpqos/internet-computer#/internet-computer/colors)
 - Powered by [Slidev](https://sli.dev)
 - Inspired by Internet Computer presentation slides
+- [IC-Slidev](https://github.com/ilbertt/ic-slidev) by Luca Bertelli

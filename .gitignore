@@ -1,7 +1,28 @@
-node_modules
+# Various IDEs and Editors
+.vscode/
+.idea/
+**/*~
+
+# Mac OSX temporary files
 .DS_Store
-dist
+**/.DS_Store
+
+# dfx temporary files
+.dfx/
+
+# generated files
+**/declarations/
+
+# frontend code
+node_modules/
+dist/
+
+# environment variables
+.env
 *.local
-index.html
+
+# slidev
+.vite-inspect
 .remote-assets
 components.d.ts
+index.html
